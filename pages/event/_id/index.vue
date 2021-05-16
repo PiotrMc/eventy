@@ -1,10 +1,9 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
+  <v-row>
+    <v-col v-if="item" class="text-center">
+      <div>Title: {{ item.title }}</div>
+      <div>Id: {{ item.id }}</div>
+      <div>TDate: {{ item.date }}</div>
     </v-col>
   </v-row>
 </template>
